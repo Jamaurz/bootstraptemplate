@@ -1,0 +1,12 @@
+{
+  "js":[
+    "./app/js/jquery-1.11.3.min.js",
+    "./app/libs/bootstrap.min.js"
+  ],
+  "css":[
+  	"./app/libs/bootstrap.min.css"
+  ],
+  "fonts":[
+
+  ]
+}

@@ -1,0 +1,197 @@
+doctype html(lang='en')
+head
+    meta(charset='UTF-8')
+    title BootstrapTemplate
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet', rel='stylesheet')
+    link(rel="stylesheet", href="css/libs.css")
+    link(rel="stylesheet", href="css/main.min.css")
+  body
+    nav.navbar.navbar-default#navigationMain.navbar-fixed-top
+      .container
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+              span.sr-only Toggle navigation         
+              span.icon-bar    
+              span.icon-bar        
+              span.icon-bar    
+            a.navbar-brand(href='#') Your Logo
+          // Collect the nav links, forms, and other content for toggling
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            //- form.navbar-form.navbar-right
+            //-   .form-group
+            //-     input.form-control(type='text', placeholder='Search')       
+            //-   button.btn.btn-default(type='submit') Submit 
+            ul.nav.navbar-nav.navbar-right
+              li.active
+                a(href='#') Home 
+                  span.sr-only (current) 
+              li
+                a(href='#') Portfolio       
+              li
+                a(href='#') About  
+              li
+                a(href='#') Contact
+              li
+                a(href='#' class="btn btn-template" role="button") Blog   
+    section#services
+      .container 
+        .row
+          .col-md-3
+            div.servicesIcon#webDesign
+            h4 Web design
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste possimus laborum asperiores, ut at ad? 
+              a(href="#") Details...
+          .col-md-3
+            div.servicesIcon#searchOptim
+            h4 Search optimization
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste possimus laborum asperiores, ut at ad? 
+              a(href="#") Details...
+          .col-md-3
+            div.servicesIcon#onlineShop
+            h4 Online Shop
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste possimus laborum asperiores, ut at ad? 
+              a(href="#") Details...
+          .col-md-3
+            div.servicesIcon#socialMedia
+            h4 Social Media
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste possimus laborum asperiores, ut at ad? 
+              a(href="#") Details...
+    section#portfolio       
+      .container
+        .row
+          .col-sm-6(class='text-left')
+            h2.orangeMark.text-capitalize Our portfolio awesome  
+          .col-sm-6(class='text-right')
+            a(href="#" class='btn btn-blue' role="button") More works 
+        .row 
+          .col-md-4
+            div.portfolioImg 
+              a(href="#")
+            h4.orangeMark.text-capitalize Lorem ipsum dolor sit amet.    
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non, modi corrupti laborum doloremque temporibus.  
+          .col-md-4
+            div.portfolioImg 
+              a(href="#")
+              h4.orangeMark.text-capitalize Lorem ipsum dolor sit amet.    
+              p Lorem ipsum dolor sit amet, consectetur.
+          .col-md-4
+            div.portfolioImg 
+              a(href="#")
+              h4.orangeMark.text-capitalize Lorem ipsum dolor sit amet.    
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non, modi corrupti laborum doloremque temporibus.
+    section#about
+      .container
+        .row
+          h2.blueMark What we offer
+          .col-md-8.col-md-offset-2
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eos commodi unde nulla laudantium repellat ut, pariatur rerum amet, natus accusantium earum dolorem delectus mollitia.
+        .row
+          .col-md-3
+            h4.blueAnotherMark Web design
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptatum. Quo, qui, quas. Deserunt earum maiores nostrum autem vero fugiat sapiente sint, enim omnis reiciendis dolor dolore, libero voluptatem!
+            a(href="#" class='btn btn-blue pull-right' role="button") Details
+          .col-md-3
+            h4.blueAnotherMark Search Optimization
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptatum. Quo, qui, quas. Deserunt earum maiores nostrum autem vero fugiat sapiente sint, enim omnis reiciendis dolor dolore, libero voluptatem!
+              a(href="#") Details...
+          .col-md-3
+            h4.blueAnotherMark Online Shoping
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptatum. Quo, qui, quas. Deserunt earum maiores nostrum autem vero fugiat sapiente sint, enim omnis reiciendis dolor dolore, libero voluptatem!
+            a(href="#" class='btn btn-blue pull-right' role="button") Details
+          .col-md-3
+            h4.blueAnotherMark Sociale Media 
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, voluptatum. Quo, qui, quas. Deserunt earum maiores nostrum autem vero fugiat sapiente sint, enim omnis reiciendis dolor dolore, libero voluptatem!
+              a(href="#") &gt;&gt;&gt;
+        .dividerLine
+        .row
+          h2.blueMark Testemonials
+          .col-md-8.col-md-offset-2
+            h2.testemonial “Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris necip at lacus commodo suscipit praesent sollicitudin enim vel mirhon”
+    footer#footer
+      .container
+        .col-md-3
+          h3.orangeMark.text-uppercase Tweeter Freds
+          ul(class="list-unstyled")
+            li Check out this great theme item
+            li
+              a(href="#") http://tadjalskFj.com
+            li 2 weeks ago
+          .dividerLine
+          ul(class="list-unstyled")
+            li Check out this great theme item
+            li
+              a(href="#") http://tadjalskFj.com
+            li 2 weeks ago
+          .dividerLine
+          ul(class="list-unstyled")
+            li Check out this great theme item
+            li
+              a(href="#") http://tadjalskFj.com
+            li 2 weeks ago
+        .col-md-3
+          h3.orangeMark.text-uppercase Newsletter
+          p.dividerP Lorem ipsum dolor sit amet, consectetur adip iscing elit. Ut ultricies sagittis magna a comm. Ut eget eros mauris, ut cursus urna.
+          .dividerLine
+          .form-group
+            label(for="emailAdress") Your Email Adress
+            input#emailAdress.form-control(type='email', placeholder='Email')
+            input(type="button" class="btn btn-blue pull-right" value="Sing in")
+        .col-md-3
+          h3.orangeMark.text-uppercase Recent projects
+          .row
+            .col-md-4.col-xs-6
+              .recentIcon
+            .col-md-8.col-xs-6
+              ul(class="list-unstyled")
+                li Sketchy Business Card
+                li
+                  a(href="#") http://tadjalskFj.com
+                li 2 weeks ago
+          .dividerLine
+          .row
+            .col-md-4.col-xs-6
+              .recentIcon
+            .col-md-8.col-xs-6
+              ul(class="list-unstyled")
+                li Message Boards in Nature
+                li
+                  a(href="#") http://tadjalskFj.com
+                li 2 weeks ago
+          .dividerLine
+          .row
+            .col-md-4.col-xs-6
+              .recentIcon
+            .col-md-8.col-xs-6
+              ul(class="list-unstyled")
+                li Website Design Kit
+                li
+                  a(href="#") http://tadjalskFj.com
+                li 2 weeks ago
+        .col-md-3
+          h3.orangeMark.text-uppercase Contact
+          .row
+            .col-md-4.col-xs-6
+              .contactIcon#phone1
+            .col-md-8.col-xs-6
+              ul(class="list-unstyled")
+                li 1-000-000-0000
+                li 1-000-000-0000
+          .dividerSpace
+          .row
+            .col-md-4.col-xs-6
+              .contactIcon#phone2
+            .col-md-8.col-xs-6
+              ul(class="list-unstyled")
+                li 1-000-000-0000
+                li 1-000-000-0000
+          .dividerSpace
+          .row
+            .col-md-4.col-xs-6
+              .contactIcon#letter
+            .col-md-8.col-xs-6
+              ul(class="list-unstyled")
+                li abcdefg@hijs.dfh
+                li jashfaf@jkfs.ckd
+    script(src="js/main.js")

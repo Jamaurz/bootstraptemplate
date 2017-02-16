@@ -1,0 +1,158 @@
+#services {
+	text-align: center;
+	h4 {
+		text-align: center;
+		font-weight: bold;
+	}
+	.servicesIcon {
+		@extend .icon;
+		background-image: url('../img/services.png'); 
+	}
+	#webDesign {
+		background-position: -10px 0;
+	}
+	#searchOptim {
+		background-position: -275px 0;
+	}
+	#onlineShop {
+		background-position: 400px 0;
+	}
+	#socialMedia {
+		background-position: 130px 0;
+	}
+}
+#portfolio {
+	background-color: $darkBlue;
+	.row:first-of-type {
+		margin-bottom: 4%;
+		a {
+			margin: 1em 0;
+		}
+	}
+	.portfolioImg {
+		a {
+			display: block;
+			background-image: url('../img/potfolioImg.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 100%;
+			max-width: 290px;
+			height: 225px;
+			margin: auto;
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				width: 55px;
+				height: 40px;
+				background-image: url('../img/portfolioIcon.png');
+				background-position: center;
+				background-repeat: no-repeat;
+				top: 40%;
+				left: 40%;
+				position: absolute;
+			}
+			&:hover:after {
+				content: 'Details';
+				color: $white;
+				background-image: url('../img/portfolioHover.png');
+				background-position: 10%;
+				border: 1px solid $white;
+				border-radius: 5px;
+				padding: 3% 25%;
+				left: 26%;
+			}
+		}
+	}
+}
+/** about */
+#about {
+	color: $aboutText;
+	.row:first-of-type {
+		margin-bottom: 4%;
+		p {
+			text-align: center;
+		}
+	}
+	h2.testemonial {
+		text-align: center;
+	}
+}
+/**  footer */
+#footer {
+	background-color: $darkBlue;
+	ul + ul {
+		padding-top: 2%;
+	}
+	#emailAdress {
+		margin: 2% 0 ;
+	}
+	label {
+		color: $blue;
+	}
+	.recentIcon {
+		width: 55px;
+		height: 55px;
+		margin: auto;
+		background-color: white;
+	}
+	.contactIcon {
+		width: 40px;
+		height: 40px;
+		margin: auto;
+		&:before {
+			content: '';
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-image: url('../img/contact.png');
+		}
+	}
+	#phone2:before {
+		background-position: 0;
+	}
+	#letter:before {
+		background-position: 0 35px;
+	}
+
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+	#services, #about, #footer {
+		.col-md-3 {
+			margin: 6% 0;
+		}
+	}
+	#portfolio {
+		text-align: center;
+		.row:first-of-type {
+			margin-bottom: 0;
+		}
+		.col-md-4 {
+			margin: 6% 0;
+		}
+	}
+	#about {
+		.row:first-of-type {
+			margin-bottom: 0;
+		}
+	}
+	#footer {
+		text-align: center;
+		h3 {
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 768px) {
+	#portfolio {
+		.text-right{
+			text-align: center;
+		} 
+		.text-left {
+			text-align: center;
+		}
+	}
+}
