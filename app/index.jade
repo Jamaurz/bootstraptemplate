@@ -35,6 +35,37 @@ head
                 a(href='#') Contact
               li
                 a(href='#' class="btn btn-template" role="button") Blog   
+    header#header
+      .container-fluid 
+        #myCarousel.carousel.slide(data-ride='carousel')
+          // Indicators
+          ol.carousel-indicators
+            li.active(data-target='#myCarousel', data-slide-to='0')     
+            li(data-target='#myCarousel', data-slide-to='1')     
+            li(data-target='#myCarousel', data-slide-to='2')
+          // Wrapper for slides
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='img/sliderImg.jpg', alt='slider 1')
+              .text-slider
+                .col-sm-8.col-sm-offset-2
+                  h1 Good design is boog business
+                  p(class="hidden-xs") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi nihil excepturi ullam sit, accusamus, molestias magnam reprehenderit ratione laborum nulla quod consectetur sint debitis alias eius nesciunt. Sint, cumque!
+                  input(type="button" class="btn btn-template btn-lg" value="Lern more")
+            .item
+              img(src='img/sliderImg.jpg', alt='slider 2')
+              .text-slider
+                .col-sm-8.col-sm-offset-2
+                  h1 Good design is boog business 2
+                  p(class="hidden-xs") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi nihil excepturi ullam sit, accusamus, molestias magnam reprehenderit ratione!
+                  input(type="button" class="btn btn-template btn-lg" value="Lern more 2")
+            .item
+              img(src='img/sliderImg.jpg', alt='slider 3')
+              .text-slider
+                .col-sm-8.col-sm-offset-2
+                  h1 Good design is boog business 3
+                  p(class="hidden-xs") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi nihil excepturi ullam sit, accusamus, molestias magnam reprehenderit ratione laborum nulla quod consectetur sint debitis alias eius nesciunt. Sint, cumque!
+                  input(type="button" class="btn btn-template btn-lg" value="Lern more 3")
     section#services
       .container 
         .row
@@ -141,9 +172,9 @@ head
         .col-md-3
           h3.orangeMark.text-uppercase Recent projects
           .row
-            .col-md-4.col-xs-6
+            .col-md-4.col-xs-4
               .recentIcon
-            .col-md-8.col-xs-6
+            .col-md-8.col-xs-8
               ul(class="list-unstyled")
                 li Sketchy Business Card
                 li
@@ -151,9 +182,9 @@ head
                 li 2 weeks ago
           .dividerLine
           .row
-            .col-md-4.col-xs-6
+            .col-md-4.col-xs-4
               .recentIcon
-            .col-md-8.col-xs-6
+            .col-md-8.col-xs-8
               ul(class="list-unstyled")
                 li Message Boards in Nature
                 li
@@ -161,9 +192,9 @@ head
                 li 2 weeks ago
           .dividerLine
           .row
-            .col-md-4.col-xs-6
+            .col-md-4.col-xs-4
               .recentIcon
-            .col-md-8.col-xs-6
+            .col-md-8.col-xs-8
               ul(class="list-unstyled")
                 li Website Design Kit
                 li
@@ -172,25 +203,25 @@ head
         .col-md-3
           h3.orangeMark.text-uppercase Contact
           .row
-            .col-md-4.col-xs-6
+            .col-md-4.col-xs-4
               .contactIcon#phone1
-            .col-md-8.col-xs-6
+            .col-md-8.col-xs-8
               ul(class="list-unstyled")
                 li 1-000-000-0000
                 li 1-000-000-0000
           .dividerSpace
           .row
-            .col-md-4.col-xs-6
+            .col-md-4.col-xs-4
               .contactIcon#phone2
-            .col-md-8.col-xs-6
+            .col-md-8.col-xs-8
               ul(class="list-unstyled")
                 li 1-000-000-0000
                 li 1-000-000-0000
           .dividerSpace
           .row
-            .col-md-4.col-xs-6
+            .col-md-4.col-xs-4
               .contactIcon#letter
-            .col-md-8.col-xs-6
+            .col-md-8.col-xs-8
               ul(class="list-unstyled")
                 li abcdefg@hijs.dfh
                 li jashfaf@jkfs.ckd
