@@ -1,1 +1,1 @@
-https://jamaurz.github.io/flexboxAcrostia/build/
+https://jamaurz.github.io/bootstraptemplate/build/
