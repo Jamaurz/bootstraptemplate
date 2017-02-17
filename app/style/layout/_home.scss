@@ -30,6 +30,12 @@
 }
 #services {
 	text-align: center;
+	position: relative;
+	#servicesHead {
+		position: absolute;
+		top: -2.5em;
+		left: 45%;
+	}
 	h4 {
 		text-align: center;
 		font-weight: bold;
@@ -107,6 +113,22 @@
 	}
 	h2.testemonial {
 		text-align: center;
+	}
+	h3 {
+		margin-top: 3em 0 2em;
+		opacity: 0;
+	}
+	.testemonialssIcon {
+		width: 80px;
+		height: 80px;
+		background-image: url('../img/testemonial.png');
+		background-position: center;
+		background-size: cover;
+		display: inline-block;
+		margin: 2%;
+		&:hover {
+			background-image: url('../img/testemonialHover.png');
+		}
 	}
 }
 /**  footer */
@@ -204,6 +226,15 @@
 			text-align: center;
 		}
 	}
+	#header {
+		.carousel-inner {
+			.text-slider {
+				input {
+					margin-top: 10%;
+				}
+			}
+		}
+	}
 }
 @media (max-width: 480px) {
 	#header {
@@ -218,6 +249,18 @@
 					font-size: 1.5em;
 				}
 			}
+		}
+	}
+	#services {
+		#servicesHead {
+			left: 40%;
+		}
+	}
+}
+@media (max-width: 380px) {
+	#services {
+		#servicesHead {
+			left: 30%;
 		}
 	}
 }

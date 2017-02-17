@@ -25,14 +25,14 @@ head
             //-   button.btn.btn-default(type='submit') Submit 
             ul.nav.navbar-nav.navbar-right
               li.active
-                a(href='#') Home 
+                a(href='#header') Home 
                   span.sr-only (current) 
               li
-                a(href='#') Portfolio       
+                a(href='#portfolio') Portfolio       
               li
-                a(href='#') About  
+                a(href='#about') About  
               li
-                a(href='#') Contact
+                a(href='#footer') Contact
               li
                 a(href='#' class="btn btn-template" role="button") Blog   
     header#header
@@ -69,6 +69,7 @@ head
     section#services
       .container 
         .row
+          h2(class="btn btn-blue text-uppercase")#servicesHead Our services
           .col-md-3
             div.servicesIcon#webDesign
             h4 Web design
@@ -140,6 +141,12 @@ head
           h2.blueMark Testemonials
           .col-md-8.col-md-offset-2
             h2.testemonial “Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris necip at lacus commodo suscipit praesent sollicitudin enim vel mirhon”
+        .row
+          .col-md-6.col-md-offset-3.text-center
+            h3(class="orangeMark" id="mouseSchow") Jon Doe / CEO of LoremIpsum
+            .testemonialssIcon
+            .testemonialssIcon
+            .testemonialssIcon 
     footer#footer
       .container
         .col-md-3
